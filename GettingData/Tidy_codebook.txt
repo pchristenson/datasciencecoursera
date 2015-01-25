@@ -1,0 +1,61 @@
+
+Tidy.txt CODEBOOK
+
+===================================================================================================================================
+Data Set Information:
+
+An original dataset was compiled from smartphone motion data as described below.  This data set contains average values for the means and standard deviations of each of the individual components for each person and activity.
+
+The experiments were carried out with a group of 30 volunteers within an age bracket of 19-48 years. Each person performed six activities (WALKING, WALKING_UPSTAIRS, WALKING_DOWNSTAIRS, SITTING, STANDING, LAYING) wearing a smartphone (Samsung Galaxy S II) on the waist. Using its embedded accelerometer and gyroscope, we captured 3-axial linear acceleration and 3-axial angular velocity at a constant rate of 50Hz. The experiments have been video-recorded to label the data manually. 
+
+The sensor signals (accelerometer and gyroscope) were pre-processed by applying noise filters and then sampled in fixed-width sliding windows of 2.56 sec and 50% overlap (128 readings/window). The sensor acceleration signal, which has gravitational and body motion components, was separated using a Butterworth low-pass filter into body acceleration and gravity. The gravitational force is assumed to have only low frequency components, therefore a filter with 0.3 Hz cutoff frequency was used. From each window, a vector of features was obtained by calculating variables from the time and frequency domain. 
+
+====================================================================================================================================
+
+
+Attribute Information:
+
+For each record in the dataset it is provided: 
+- Average Triaxial acceleration from the accelerometer (total acceleration) and the average estimated body acceleration. 
+- Average Triaxial Angular velocity from the gyroscope. 
+- An 81 -feature vector with average of means and average of std. deviations across time and frequency domain variables for each person and activity. 
+- Its activity label. 
+- An identifier of the subject who carried out the experiment.
+
+====================================================================================================================================
+
+Individual column names
+
+"subject" - A number identifier from 1 to 30 to individually identify each person in the test
+
+"Activity_Label" - A string description of the activity (WALKING, WALKING_UPSTAIRS, WALKING_DOWNSTAIRS, SITTING, STANDING, LAYING)
+
+The following 79 variables indicate an average value over the self-descriptive measurement.  Each value was normalized and bounded within [-1,1].  The value is a decimal value to 15 decimal places.
+
+"tBodyAcc-mean()-X Avg"              
+"tBodyAcc-mean()-Y Avg"               "tBodyAcc-mean()-Z Avg"               "tBodyAcc-std()-X Avg"               
+"tBodyAcc-std()-Y Avg"                "tBodyAcc-std()-Z Avg"                "tGravityAcc-mean()-X Avg"           
+"tGravityAcc-mean()-Y Avg"            "tGravityAcc-mean()-Z Avg"            "tGravityAcc-std()-X Avg"            
+"tGravityAcc-std()-Y Avg"             "tGravityAcc-std()-Z Avg"             "tBodyAccJerk-mean()-X Avg"          
+"tBodyAccJerk-mean()-Y Avg"           "tBodyAccJerk-mean()-Z Avg"           "tBodyAccJerk-std()-X Avg"           
+"tBodyAccJerk-std()-Y Avg"            "tBodyAccJerk-std()-Z Avg"            "tBodyGyro-mean()-X Avg"             
+"tBodyGyro-mean()-Y Avg"              "tBodyGyro-mean()-Z Avg"              "tBodyGyro-std()-X Avg"              
+"tBodyGyro-std()-Y Avg"               "tBodyGyro-std()-Z Avg"               "tBodyGyroJerk-mean()-X Avg"         
+"tBodyGyroJerk-mean()-Y Avg"          "tBodyGyroJerk-mean()-Z Avg"          "tBodyGyroJerk-std()-X Avg"          
+"tBodyGyroJerk-std()-Y Avg"           "tBodyGyroJerk-std()-Z Avg"           "tBodyAccMag-mean() Avg"             
+"tBodyAccMag-std() Avg"               "tGravityAccMag-mean() Avg"           "tGravityAccMag-std() Avg"           
+"tBodyAccJerkMag-mean() Avg"          "tBodyAccJerkMag-std() Avg"           "tBodyGyroMag-mean() Avg"            
+"tBodyGyroMag-std() Avg"              "tBodyGyroJerkMag-mean() Avg"         "tBodyGyroJerkMag-std() Avg"         
+"fBodyAcc-mean()-X Avg"               "fBodyAcc-mean()-Y Avg"               "fBodyAcc-mean()-Z Avg"              
+"fBodyAcc-std()-X Avg"                "fBodyAcc-std()-Y Avg"                "fBodyAcc-std()-Z Avg"               
+"fBodyAcc-meanFreq()-X Avg"           "fBodyAcc-meanFreq()-Y Avg"           "fBodyAcc-meanFreq()-Z Avg"          
+"fBodyAccJerk-mean()-X Avg"           "fBodyAccJerk-mean()-Y Avg"           "fBodyAccJerk-mean()-Z Avg"          
+"fBodyAccJerk-std()-X Avg"            "fBodyAccJerk-std()-Y Avg"            "fBodyAccJerk-std()-Z Avg"           
+"fBodyAccJerk-meanFreq()-X Avg"       "fBodyAccJerk-meanFreq()-Y Avg"       "fBodyAccJerk-meanFreq()-Z Avg"      
+"fBodyGyro-mean()-X Avg"              "fBodyGyro-mean()-Y Avg"              "fBodyGyro-mean()-Z Avg"             
+"fBodyGyro-std()-X Avg"               "fBodyGyro-std()-Y Avg"               "fBodyGyro-std()-Z Avg"              
+"fBodyGyro-meanFreq()-X Avg"          "fBodyGyro-meanFreq()-Y Avg"          "fBodyGyro-meanFreq()-Z Avg"         
+"fBodyAccMag-mean() Avg"              "fBodyAccMag-std() Avg"               "fBodyAccMag-meanFreq() Avg"         
+"fBodyBodyAccJerkMag-mean() Avg"      "fBodyBodyAccJerkMag-std() Avg"       "fBodyBodyAccJerkMag-meanFreq() Avg" 
+"fBodyBodyGyroMag-mean() Avg"         "fBodyBodyGyroMag-std() Avg"          "fBodyBodyGyroMag-meanFreq() Avg"    
+"fBodyBodyGyroJerkMag-mean() Avg"     "fBodyBodyGyroJerkMag-std() Avg"      "fBodyBodyGyroJerkMag-meanFreq() Avg"
